@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176641080366",
+    "firebase_url": "https://tourex-7dd8e.firebaseio.com",
+    "project_id": "tourex-7dd8e",
+    "storage_bucket": "tourex-7dd8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176641080366:android:927f8dd72bd600de",
+        "android_client_info": {
+          "package_name": "com.example.bvasudeva1.tourex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176641080366-psgg2u91bl7i8nkm55luraosi3qsa7tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bvasudeva1.tourex",
+            "certificate_hash": "41889ffcfb00dd623d5a9277258d13381699a362"
+          }
+        },
+        {
+          "client_id": "176641080366-st2ds9k2u0tt41m6a0km55f0lmpges8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqi69f7CRU44-w0HQqYupwVfqQxwYdCL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176641080366-st2ds9k2u0tt41m6a0km55f0lmpges8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserInput2">
+    tools:context=".Feedback">
 
     <TextView
         android:id="@+id/textView4"
@@ -14,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
         android:textStyle="bold"
-        android:text="\n\nStep 2: Input QoS Parameters" />
+        android:text="\n\nUser Feedback" />
 
     <TextView
         android:id="@+id/textView6"
@@ -151,21 +152,10 @@
         android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="42dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="120dp"
         android:background="@drawable/login_button"
         android:onClick="open"
-        android:text="Previous" />
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="42dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/login_button"
-        android:text="Next" />
+        android:text="Submit" />
 
 
 </RelativeLayout>

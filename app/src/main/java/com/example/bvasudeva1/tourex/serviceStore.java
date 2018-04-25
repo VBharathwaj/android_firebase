@@ -1,20 +1,9 @@
 package com.example.bvasudeva1.tourex;
 
-//Class to store the Service Data
-public class serviceStore{
+import java.io.Serializable;
 
-    String title;
-    double availability;
-    double cost;
-    double frequency;
-    double reputation;
-    double response;
-    double success_rate;
-    String mobile_number;
-    String website;
-    String email_id;
-    int fuzzy_tag;
-    double topsis_tag;
+//Class to store the Service Data
+public class serviceStore implements Serializable{
 
     //Variable Declaration
     int service;
@@ -190,5 +179,20 @@ public class serviceStore{
     //Function to print the data of a service
     public void printServiceQos(){
         System.out.println(service + "\t" + title + "\t" + availability + "\t" + cost + "\t" + frequency + "\t" + reputation + "\t" + response + "\t" + success_rate + "\t" + mobile_number + "\t" + website + "\t" + email_id);
+    }
+
+    //Function to print the data of a service
+    public void printServiceQosWithFuzzyTag(){
+        System.out.println(service + "\t" + availability + "\t" + cost + "\t" + frequency + "\t" + reputation + "\t" + response + "\t" + success_rate + "\t" + fuzzy_tag);
+    }
+
+    //Function to print the data of a service
+    public void printServiceQosWithTopsisTag(){
+        System.out.println(service + "\t" + title + "\t" + availability + "\t" + cost + "\t" + frequency + "\t" + reputation + "\t" + response + "\t" + success_rate + "\t" + topsis_tag);
+    }
+
+    //Function to print the fuzzy classified values
+    void printFuzzyTag(){
+        System.out.println(service + "\t" + reputation + "\t" + fuzzy_tag);
     }
 }

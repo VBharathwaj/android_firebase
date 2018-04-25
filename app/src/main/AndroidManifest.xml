@@ -22,7 +22,10 @@
         <activity android:name=".UserInput" />
         <activity android:name=".UserInput2" />
         <activity android:name=".Confirmation" />
-        <activity android:name=".Process"></activity>
+        <activity android:name=".Process" />
+        <activity android:name=".Processed" />
+        <activity android:name=".selectedComposition" />
+        <activity android:name=".Feedback"></activity>
     </application>
 
 </manifest>

@@ -57,28 +57,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(){
-        Intent intent = new Intent(MainActivity.this, UserInput.class);
-        startActivity(intent);
-//        if(validate()) {
-//            mAuth.signInWithEmailAndPassword(email, password)
-//                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if (task.isSuccessful()) {
-//                                Log.d(TAG, "signInWithEmail:success");
-//                                FirebaseUser user = mAuth.getCurrentUser();
-//                                Intent intent = new Intent(MainActivity.this, UserInput.class);
-//                                startActivity(intent);
-//                            } else {
-//                                // If sign in fails, display a message to the user.
-//                                Log.w(TAG, "signInWithEmail:failure", task.getException());
-//                                Toast.makeText(MainActivity.this, "Authentication failed.",
-//                                        Toast.LENGTH_SHORT).show();
-//                            }
-//                        }
-//                    });
-//
-//        }
+        if(validate()) {
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Log.d(TAG, "signInWithEmail:success");
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                Intent intent = new Intent(MainActivity.this, UserInput.class);
+                                startActivity(intent);
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Log.w(TAG, "signInWithEmail:failure", task.getException());
+                                Toast.makeText(MainActivity.this, "Authentication failed.",
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
+        else {
+            Toast.makeText(MainActivity.this, "Invalid Input.",Toast.LENGTH_SHORT).show();
+        }
     }
 
     public boolean validate(){

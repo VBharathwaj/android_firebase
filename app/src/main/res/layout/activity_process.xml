@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:enabled="false"
-        android:background="#ECEFF1"
-        android:text="Search" />
+        android:background="#8BC34A"
+        android:text="Click  Here to Start Processing" />
 
     <TextView
         android:id="@+id/textView11"
@@ -23,7 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="209dp"
-        android:text="Please wait...data is being fetched...."
+        android:text="Please wait...\nData is being fetched...."
         android:textColor="#ECEFF1"
         android:textAlignment="center"
         android:textSize="20dp"

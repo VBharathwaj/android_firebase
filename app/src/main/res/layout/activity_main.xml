@@ -11,7 +11,9 @@
         android:id="@+id/input_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="247dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/login_user_name"
@@ -23,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="248dp"
+        android:layout_marginBottom="193dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/login_password"
@@ -35,14 +37,14 @@
         android:layout_height="34dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="181dp"
+        android:layout_marginBottom="130dp"
         android:background="@drawable/login_button"
         android:text="@string/login_button" />
 
     <View
         android:id="@+id/topBackgroundView"
         android:layout_width="wrap_content"
-        android:layout_height="600px"
+        android:layout_height="750px"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="@color/colorPrimary"/>
@@ -52,7 +54,7 @@
         android:layout_height="117dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="62dp"
         android:src="@drawable/icon" />
 
     <TextView
@@ -61,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="141dp"
+        android:layout_marginBottom="93dp"
         android:text="Don't have an account? Sign Up" />
 
 

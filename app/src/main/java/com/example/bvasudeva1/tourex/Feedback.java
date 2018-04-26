@@ -38,11 +38,11 @@ public class Feedback extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         //ref = database.getReference().child("services");
 
-        availability = findViewById(R.id.input_availability);
-        cost = findViewById(R.id.input_cost);
-        frequency = findViewById(R.id.input_frequency);
-        reputation = findViewById(R.id.input_reputation);
-        response = findViewById(R.id.input_response);
+//        availability = findViewById(R.id.input_availability);
+//        cost = findViewById(R.id.input_cost);
+//        frequency = findViewById(R.id.input_frequency);
+//        reputation = findViewById(R.id.input_reputation);
+//        response = findViewById(R.id.input_response);
         success_rate = findViewById(R.id.input_success_rate);
 
         Intent intent = getIntent();
@@ -54,26 +54,26 @@ public class Feedback extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                ava = availability.getText().toString();
-                cos = cost.getText().toString();
-                freq = frequency.getText().toString();
-                rep = reputation.getText().toString();
-                res = response.getText().toString();
+//                ava = availability.getText().toString();
+//                cos = cost.getText().toString();
+//                freq = frequency.getText().toString();
+//                rep = reputation.getText().toString();
+//                res = response.getText().toString();
                 suc = success_rate.getText().toString();
 
                 if(validate()){
                     i=0;
                     for(String singleService: services){
-                        value = (Integer.parseInt(ava)+serviceList.get(i).getAvailability())/2;
-                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("availability").setValue(value);
-                        value = (Integer.parseInt(cos)+serviceList.get(i).getCost())/2;
-                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("cost").setValue(value);
-                        value = (Integer.parseInt(freq)+serviceList.get(i).getFrequency())/2;
-                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("frequency").setValue(value);
-                        value = (Integer.parseInt(rep)+serviceList.get(i).getReputation())/2;
-                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("reputation").setValue(value);
-                        value = (Integer.parseInt(res)+serviceList.get(i).getResponse())/2;
-                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("response").setValue(value);
+//                        value = (Integer.parseInt(ava)+serviceList.get(i).getAvailability())/2;
+//                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("availability").setValue(value);
+//                        value = (Integer.parseInt(cos)+serviceList.get(i).getCost())/2;
+//                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("cost").setValue(value);
+//                        value = (Integer.parseInt(freq)+serviceList.get(i).getFrequency())/2;
+//                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("frequency").setValue(value);
+//                        value = (Integer.parseInt(rep)+serviceList.get(i).getReputation())/2;
+//                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("reputation").setValue(value);
+//                        value = (Integer.parseInt(res)+serviceList.get(i).getResponse())/2;
+//                        database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("response").setValue(value);
                         value = (Integer.parseInt(suc)+serviceList.get(i).getSuccess_rate())/2;
                         database.getReference().child("services").child(getServiceName(Integer.parseInt(singleService))).child(getServiceNumber(serviceList.get(i).getService())).child("success_rate").setValue(value);
                         i++;
@@ -125,70 +125,70 @@ public class Feedback extends AppCompatActivity {
     public boolean validate(){
         boolean valid = true;
 
-        if(ava.isEmpty()){
-            availability.setError("Cannot be empty!");
-            valid = false;
-        }else{
-            ava_val = Integer.parseInt(ava);
-            if(ava_val <= 0 || ava_val > 10){
-                availability.setError("Enter value between 1 and 10");
-                valid = false;
-            }else{
-                qos.add(ava_val);
-            }
-        }
-
-        if(cos.isEmpty()){
-            cost.setError("Cannot be empty!");
-            valid = false;
-        }else{
-            cos_val = Integer.parseInt(cos);
-            if(cos_val <= 0 || cos_val > 10){
-                cost.setError("Enter value between 1 and 10");
-                valid = false;
-            }else{
-                qos.add(cos_val);
-            }
-        }
-
-        if(freq.isEmpty()){
-            frequency.setError("Cannot be empty!");
-            valid = false;
-        }else{
-            freq_val = Integer.parseInt(freq);
-            if(freq_val <= 0 || freq_val > 10){
-                frequency.setError("Enter value between 1 and 10");
-                valid = false;
-            }else{
-                qos.add(freq_val);
-            }
-        }
-
-        if(rep.isEmpty()){
-            reputation.setError("Cannot be empty!");
-            valid = false;
-        }else{
-            rep_val = Integer.parseInt(rep);
-            if(rep_val <= 0 || rep_val > 10){
-                reputation.setError("Enter value between 1 and 10");
-                valid = false;
-            }else{
-                qos.add(rep_val);
-            }
-        }
-
-        if(res.isEmpty()){
-            response.setError("Cannot be empty!");
-            valid = false;
-        }else{
-            res_val = Integer.parseInt(res);
-            if(res_val <= 0 || res_val > 10){
-                response.setError("Enter value between 1 and 10");
-                valid = false;
-            }else{
-                qos.add(res_val);
-            }
-        }
+//        if(ava.isEmpty()){
+//            availability.setError("Cannot be empty!");
+//            valid = false;
+//        }else{
+//            ava_val = Integer.parseInt(ava);
+//            if(ava_val <= 0 || ava_val > 10){
+//                availability.setError("Enter value between 1 and 10");
+//                valid = false;
+//            }else{
+//                qos.add(ava_val);
+//            }
+//        }
+//
+//        if(cos.isEmpty()){
+//            cost.setError("Cannot be empty!");
+//            valid = false;
+//        }else{
+//            cos_val = Integer.parseInt(cos);
+//            if(cos_val <= 0 || cos_val > 10){
+//                cost.setError("Enter value between 1 and 10");
+//                valid = false;
+//            }else{
+//                qos.add(cos_val);
+//            }
+//        }
+//
+//        if(freq.isEmpty()){
+//            frequency.setError("Cannot be empty!");
+//            valid = false;
+//        }else{
+//            freq_val = Integer.parseInt(freq);
+//            if(freq_val <= 0 || freq_val > 10){
+//                frequency.setError("Enter value between 1 and 10");
+//                valid = false;
+//            }else{
+//                qos.add(freq_val);
+//            }
+//        }
+//
+//        if(rep.isEmpty()){
+//            reputation.setError("Cannot be empty!");
+//            valid = false;
+//        }else{
+//            rep_val = Integer.parseInt(rep);
+//            if(rep_val <= 0 || rep_val > 10){
+//                reputation.setError("Enter value between 1 and 10");
+//                valid = false;
+//            }else{
+//                qos.add(rep_val);
+//            }
+//        }
+//
+//        if(res.isEmpty()){
+//            response.setError("Cannot be empty!");
+//            valid = false;
+//        }else{
+//            res_val = Integer.parseInt(res);
+//            if(res_val <= 0 || res_val > 10){
+//                response.setError("Enter value between 1 and 10");
+//                valid = false;
+//            }else{
+//                qos.add(res_val);
+//            }
+//        }
 
         if(suc.isEmpty()){
             success_rate.setError("Cannot be empty!");
@@ -205,6 +205,4 @@ public class Feedback extends AppCompatActivity {
 
         return valid;
     }
-
-
 }

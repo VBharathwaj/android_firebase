@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="200dp"
     android:background="?android:attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true"
@@ -11,14 +11,14 @@
                 android:id="@+id/service"
                 android:textAlignment="center"
                 android:layout_width="50dp"
-                android:layout_height="32dp"
+                android:layout_height="50dp"
                 android:background="@color/colorPrimary"
                 android:text="1" />
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="365dp"
-                android:layout_height="32dp"
+                android:layout_height="50dp"
                 android:layout_alignParentTop="true"
                 android:textAlignment="center"
                 android:background="@color/colorPrimary"
@@ -29,7 +29,7 @@
                 android:id="@+id/availabilityTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:text="Availability" />
 
             <TextView
@@ -37,8 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/availabilityTitle"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="50dp"
                 android:text="Cost" />
 
             <TextView
@@ -46,35 +46,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/costTitle"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="50dp"
                 android:text="Frequency" />
 
             <TextView
                 android:id="@+id/reputationTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="2dp"
                 android:layout_toEndOf="@+id/frequencyTitle"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:text="Reputation" />
 
             <TextView
                 android:id="@+id/responseTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="3dp"
                 android:layout_toEndOf="@+id/reputationTitle"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:text="Response" />
 
             <TextView
                 android:id="@+id/successTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="3dp"
                 android:layout_toEndOf="@+id/responseTitle"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:text="Success" />
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/availability"
-                android:layout_marginStart="42dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="70dp"
                 android:text="9" />
 
@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/cost"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="70dp"
                 android:text="8" />
 
@@ -109,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/frequency"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="70dp"
                 android:text="7" />
 
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/reputation"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="45dp"
                 android:layout_marginTop="70dp"
                 android:text="8" />
 
@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/response"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="45dp"
                 android:layout_marginTop="70dp"
                 android:text="9" />
 

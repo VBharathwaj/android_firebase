@@ -48,7 +48,7 @@ public class selectedServicesListAdapter extends RecyclerView.Adapter<selectedSe
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         selectedServicesList movie = moviesList.get(position);
-        holder.service.setText(String.valueOf(movie.getService()));
+        holder.service.setText("\n" + String.valueOf(movie.getService()));
         holder.title.setText(movie.getTitle());
         holder.availability.setText(String.valueOf(movie.getAvailability()));
         holder.cost.setText(String.valueOf(movie.getCost()));

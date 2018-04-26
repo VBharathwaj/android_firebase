@@ -56,7 +56,7 @@ public class selectedServicesList {
     }
 
     public String getTitle() {
-        return title;
+        return "\n" + title;
     }
 
     public void setTitle(String title) {

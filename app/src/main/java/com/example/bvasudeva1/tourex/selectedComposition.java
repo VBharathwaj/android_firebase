@@ -28,6 +28,7 @@ public class selectedComposition extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selected_composition);
 
+
         Intent intent = getIntent();
         services = intent.getStringArrayListExtra("services");
         serviceList = (ArrayList<serviceStore>)intent.getSerializableExtra("SelectedComposition");
@@ -44,6 +45,7 @@ public class selectedComposition extends AppCompatActivity {
     }
 
     public void prepareServiceData(){
+        movieList.clear();
         for(serviceStore a : serviceList){
             movieList.add(new selectedServicesList(a));
         }
